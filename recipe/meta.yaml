@@ -23,6 +23,8 @@ requirements:
     - python
     - click
     - flask
+    - python-dateutil
+    - pytz
     - pyyaml
     - unicodecsv
 
@@ -37,7 +39,7 @@ about:
   home: "https://pygeoapi.io"
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.md
   summary: "pygeoapi provides an API to geospatial data"
 
 extra:
