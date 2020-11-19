@@ -17,15 +17,17 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - click
     - flask
+    - pyproj
     - python-dateutil
     - pytz
     - pyyaml
+    - rasterio
     - unicodecsv
 
 test:
