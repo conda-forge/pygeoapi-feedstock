@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
   run:
-    - python >=3
+    - python >=3.6
     - click
     - flask
     - pyproj
@@ -28,14 +28,18 @@ requirements:
     - pytz
     - pyyaml
     - rasterio
+    - shapely
     - unicodecsv
 
 test:
   files:
     - local.config.yml
   commands:
+    - pip check
     - export PYGEOAPI_CONFIG=local.config.yml
     - pygeoapi --help
+  requires:
+    - pip
 
 about:
   home: https://pygeoapi.io
