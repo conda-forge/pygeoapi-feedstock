@@ -1,4 +1,4 @@
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 package:
   name: pygeoapi
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pygeoapi/pygeoapi-{{ version }}.tar.gz
-  sha256: 4cc74c7a59e7b8661d61f33cde21150bd613dbaa9e4e958a9a8993428ccec32a
+  sha256: a6032acdd95256492b5c433e58d610ff7677768aa89b946ca10dec70ee716d9b
 
 build:
   number: 0
@@ -21,14 +21,19 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - click
+    - babel
+    - click <8
     - flask
+    - future-annotations
+    - jsonschema
+    - pydantic
     - pyproj
     - python-dateutil
     - pytz
     - pyyaml
     - rasterio
     - shapely
+    - tinydb
     - unicodecsv
 
 test:
