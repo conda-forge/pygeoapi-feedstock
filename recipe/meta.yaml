@@ -21,14 +21,19 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - click
+    - babel
+    - click <8
     - flask
+    - future-annotations
+    - jsonschema
+    - pydantic
     - pyproj
     - python-dateutil
     - pytz
     - pyyaml
     - rasterio
     - shapely
+    - tinydb
     - unicodecsv
 
 test:
