@@ -1,19 +1,20 @@
-{% set version = "0.12.0" %}
+{% set name = "pygeoapi" %}
+{% set version = "0.13.0" %}
 
 package:
-  name: pygeoapi
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pygeoapi/pygeoapi-{{ version }}.tar.gz
-  sha256: 7a491b786184a5b78ecbcdbaf6c7a62bd516b49aa068666803a6a8b2d1182e26
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoapi-{{ version }}.tar.gz
+  sha256: 1104a95724e818bfa4ed97a6d8d0a48dc0482739a0dd8edfcb146e56f932097c
 
 build:
-  number: 0
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pygeoapi=pygeoapi:cli
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -22,11 +23,11 @@ requirements:
   run:
     - python >=3.6
     - babel
-    - click <8
+    - click >7,<=8
     - flask
-    - future-annotations
     - jsonschema
-    - pydantic
+    - pygeofilter
+    - pygeoif ==0.7
     - pyproj
     - python-dateutil
     - pytz
@@ -35,6 +36,9 @@ requirements:
     - shapely
     - tinydb
     - unicodecsv
+    - future-annotations
+    - pydantic
+    - jinja2 ==3.0.3
 
 test:
   files:
