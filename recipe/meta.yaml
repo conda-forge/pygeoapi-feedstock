@@ -1,5 +1,5 @@
 {% set name = "pygeoapi" %}
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoapi-{{ version }}.tar.gz
-  sha256: 1104a95724e818bfa4ed97a6d8d0a48dc0482739a0dd8edfcb146e56f932097c
+  sha256: eaf6170536bc16701a59c44ff33607e45824ca0a54180e9c36de941d4c52264b
 
 build:
   entry_points:
