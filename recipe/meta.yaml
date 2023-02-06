@@ -25,7 +25,10 @@ requirements:
     - babel
     - click >7,<=8
     - flask
+    - future-annotations
+    - jinja2 ==3.0.3
     - jsonschema
+    - pydantic
     - pygeofilter
     - pygeoif ==0.7
     - pyproj
@@ -33,12 +36,11 @@ requirements:
     - pytz
     - pyyaml
     - rasterio
-    - shapely
+    - requests
+    - shapely <2.0
+    - sqlalchemy <2.0.0
     - tinydb
     - unicodecsv
-    - future-annotations
-    - pydantic
-    - jinja2 ==3.0.3
 
 test:
   files:
