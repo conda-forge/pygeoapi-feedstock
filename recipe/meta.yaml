@@ -1,5 +1,5 @@
 {% set name = "pygeoapi" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoapi-{{ version }}.tar.gz
-  sha256: eaf6170536bc16701a59c44ff33607e45824ca0a54180e9c36de941d4c52264b
+  sha256: 96ea1e80a9eb6fbd6434e65b5dc228a47a60a5329d4ea394044acbf69739d770
 
 build:
   entry_points:
@@ -21,16 +21,17 @@ requirements:
     - python >=3.6
     - pip
   run:
+    - importlib-metadata
     - python >=3.6
     - babel
-    - click >7,<=8
+    - click
     - flask
     - future-annotations
-    - jinja2 ==3.0.3
+    - jinja2
     - jsonschema
     - pydantic
     - pygeofilter
-    - pygeoif ==0.7
+    - pygeoif
     - pyproj
     - python-dateutil
     - pytz
