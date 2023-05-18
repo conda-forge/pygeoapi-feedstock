@@ -1,11 +1,11 @@
-About pygeoapi
-==============
+About pygeoapi-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoapi-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pygeoapi.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoapi-feedstock/blob/main/LICENSE.txt)
 
 Summary: pygeoapi provides an API to geospatial data
 
