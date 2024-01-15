@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
     - importlib-metadata
-    - python >=3.6
+    - python >=3.7
     - babel
     - click
     - flask
