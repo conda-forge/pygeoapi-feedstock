@@ -14,7 +14,7 @@ build:
     - pygeoapi=pygeoapi:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -26,7 +26,6 @@ requirements:
     - babel
     - click
     - flask
-    - future-annotations
     - jinja2
     - jsonschema
     - pydantic
