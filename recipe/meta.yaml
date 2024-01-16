@@ -14,22 +14,21 @@ build:
     - pygeoapi=pygeoapi:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
     - importlib-metadata
-    - python >=3.6
+    - python >=3.7
     - babel
     - click
     - flask
-    - future-annotations
     - jinja2
     - jsonschema
-    - pydantic
+    - pydantic <2.0
     - pygeofilter
     - pygeoif
     - pyproj
@@ -64,3 +63,4 @@ extra:
   recipe-maintainers:
     - tomkralidis
     - ocefpaf
+    - DManowitz
