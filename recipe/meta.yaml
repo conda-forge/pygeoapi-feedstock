@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "pygeoapi" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pygeoapi-{{ version }}.tar.gz
-  sha256: 222613a43b1fe9855188d127953aee2bdf1423d8b3c507f050f4bd28397f2c94
+  sha256: 2f5b07af8c6735e8259a468766821c22909e4c00e0c872dea8767d812164fa6a
 
 build:
   entry_points:
@@ -30,7 +30,7 @@ requirements:
     - flask
     - jinja2
     - jsonschema
-    - pydantic <2.0
+    - pydantic
     - pygeofilter
     - pygeoif
     - pyproj
